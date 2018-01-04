@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.myapplication3.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="231dp">
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextRemarks"
+            android:layout_alignBottom="@+id/editTextRemarks"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/editTextRemarks"
+            android:layout_toRightOf="@+id/editTextRemarks"
+            android:ems="12"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <EditText
+            android:id="@+id/editTextRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="12"
+            android:hint="Remarks"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <Button
+            android:id="@+id/buttonAddDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextRemarks"
+            android:onClick="onClickAddToDb"
+            android:text="Add To Database"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+        <EditText
+            android:id="@+id/editTextID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonAddDatabase"
+            android:hint="enter id?"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp"></EditText>
+
+        <Button
+            android:id="@+id/buttonDeleteDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextID"
+            android:onClick="onClickDeleteFromDb"
+            android:text="Delete From Database"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+        <Button
+            android:id="@+id/buttonDisplayDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonDeleteDatabase"
+            android:onClick="onClickGetEntireDb"
+            android:text="Display Database"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <TextView
+            android:id="@+id/textViewEntireDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_below="@+id/buttonDisplayDatabase"
+            android:text="Database Info here"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
